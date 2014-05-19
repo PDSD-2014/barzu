@@ -1,0 +1,34 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#f4dab8"
+    tools:context="com.example.coffeeshopfinder.MainActivity$PlaceholderFragment" >
+
+	<Spinner
+	    android:id="@+id/search_type"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentTop="true"
+	    android:layout_centerHorizontal="true" />
+
+	<Button
+	    android:id="@+id/search"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignLeft="@+id/search_type"
+	    android:layout_below="@+id/search_type"
+	    android:onClick="onClick_Search"
+	    android:text="Search" />
+
+	<ListView 
+	    android:id="@+id/list" 
+	    android:layout_width="wrap_content" 
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="110dp" />   
+
+</RelativeLayout>
